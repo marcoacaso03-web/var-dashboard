@@ -11,6 +11,12 @@ Uso:
     streamlit run app.py
 """
 
+import os
+import sys
+
+# Ensure the repo root is in sys.path for Streamlit Cloud
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 from datetime import datetime, timedelta
 
 import numpy as np
